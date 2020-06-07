@@ -333,8 +333,12 @@
           <div class="col-lg-4 col-md-6 footer-newsletter">
             <h4>Join Our Newsletter</h4>
             <p>Get more update on weekly updates</p>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
+            <form action="https://anuhyadigital-developer-edition.ap17.force.com/services/apexrest/anyobject" method="POST">
+              <input type="hidden" name="otype" value="Subscriber__c" />
+              <input type="hidden" name="retURL" value="http://www.anuhyadigital.com" />
+              <input type="hidden" name="encoding" value="UTF-8" />
+              <input type="email" name="Email__c" type="text" id="Email__c">
+              <input type="submit" onClick="parent.location='index.html'" value="Subscribe">
             </form>
           </div>
 
